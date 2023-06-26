@@ -18,7 +18,6 @@ public class Checker {
     public static void failureLoginCheck(WebDriver driver){
         WebElement failLogin = driver.findElement(By.xpath("/html/body/font"));
         String text = failLogin.getText();
-        System.out.println(text);
         if (text.equals("* Данные о пользователе введены неправильно!")){
             System.out.println("Проверка ввода неверного пароля прошла успешно");
         } else {
